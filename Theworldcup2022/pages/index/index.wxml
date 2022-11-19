@@ -1,0 +1,39 @@
+
+<image class="first_image" mode="widthFix" src="images/image-1.jpg"></image>
+<scroll-view scroll-x>
+  <view class="head head1">
+    <view>
+      <checkbox checked="{{select_all}}"  bindtap="selectall" />
+      <!-- 赛程表 -->
+    </view>
+    <view>比赛时间</view>
+    <view>阶段</view>
+    <view>对阵</view>
+    <view>推荐指数</view>
+    <!-- <view>开售时间</view>
+    <view>结束时间</view> -->
+  </view>
+  <view class="con">
+    <checkbox-group bindchange="checkboxChange">
+      <block wx:for="{{schedule_list}}" wx:key="index">
+        <view class="head">
+          <view>
+            <checkbox value="{{item._id}}" checked="{{item.checked}}" />
+          </view>
+          <view>{{item.time}}</view>
+          <view>{{item.stage}}</view>
+          <view>{{item.team}}</view>
+          <view>{{item.suggest}}</view>
+          <!-- <view>{{item.star_date}}</view>
+          <view>{{item.end_date}}</view> -->
+        </view>
+      </block>
+    </checkbox-group>
+  </view>
+</scroll-view>
+<button bindtap="getaccess">订阅赛程</button>
+<!-- <button bindtap="sendone">发送订阅</button> -->
+<!-- <button bindtap="getopenid">登录</button>
+<button bindtap="getaccess">2:获取用户授权</button>
+<!-- <button bindtap="sendone">3:发送订阅消息给单个用户</button
+<button bindtap="sendall">4:发送订阅消息给多个用户</button> -->

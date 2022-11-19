@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/info/info",
+    "pages/user/user"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "The World Cup2022",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#f00",
+    "color": "#000000",
+    "list":[{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/warehouse.png",
+      "selectedIconPath": "images/warehouse_r.png"
+    },
+    {
+      "pagePath": "pages/user/user",
+      "text": "我的",
+      "iconPath": "images/role.png",
+      "selectedIconPath": "images/role_r.png"
+    }
+  ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
